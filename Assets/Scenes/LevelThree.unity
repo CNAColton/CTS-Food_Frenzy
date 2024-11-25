@@ -220,6 +220,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   grid: {fileID: 581336197}
+  hud: {fileID: 893867976}
   score1Star: 50000
   score2Star: 65000
   score3Star: 75000
@@ -575,6 +576,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1052824811623635948, guid: e67272195969d9645aaa698b0c4a6891, type: 3}
+      propertyPath: m_margin.z
+      value: -267.00363
+      objectReference: {fileID: 0}
+    - target: {fileID: 1897275710206187177, guid: e67272195969d9645aaa698b0c4a6891, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -22.9647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1897275710206187177, guid: e67272195969d9645aaa698b0c4a6891, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 99.8275
+      objectReference: {fileID: 0}
+    - target: {fileID: 1897275710206187177, guid: e67272195969d9645aaa698b0c4a6891, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -322.48233
+      objectReference: {fileID: 0}
+    - target: {fileID: 1897275710206187177, guid: e67272195969d9645aaa698b0c4a6891, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 304.08624
+      objectReference: {fileID: 0}
     - target: {fileID: 4287892492187360622, guid: e67272195969d9645aaa698b0c4a6891, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -655,6 +676,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6796560230671285257, guid: e67272195969d9645aaa698b0c4a6891, type: 3}
+      propertyPath: level
+      value: 
+      objectReference: {fileID: 245619825}
     - target: {fileID: 7319585558988386632, guid: e67272195969d9645aaa698b0c4a6891, type: 3}
       propertyPath: m_Name
       value: Game UI Canvas
@@ -664,6 +689,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e67272195969d9645aaa698b0c4a6891, type: 3}
+--- !u!114 &893867976 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6796560230671285257, guid: e67272195969d9645aaa698b0c4a6891, type: 3}
+  m_PrefabInstance: {fileID: 893867975}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73e5b3ce21ec02d41ad1076646bcfd8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

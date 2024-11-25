@@ -220,6 +220,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   grid: {fileID: 581336197}
+  hud: {fileID: 1485902046}
   score1Star: 25000
   score2Star: 27000
   score3Star: 30000
@@ -703,6 +704,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e67272195969d9645aaa698b0c4a6891, type: 3}
+--- !u!114 &1485902046 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6796560230671285257, guid: e67272195969d9645aaa698b0c4a6891, type: 3}
+  m_PrefabInstance: {fileID: 1485902045}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73e5b3ce21ec02d41ad1076646bcfd8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
