@@ -1,4 +1,4 @@
-﻿public class LevelMoves : Level
+﻿    public class LevelMoves : Level
 {
     public int numMoves;
     public int targetScore;

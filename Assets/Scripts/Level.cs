@@ -73,7 +73,7 @@ public class Level : MonoBehaviour
         while (grid.IsFilling)
         {
             yield return 0;
-        }
+        }   
 
         if(didWin && !grid.IsFilling)
         {
