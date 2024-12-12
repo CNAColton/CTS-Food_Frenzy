@@ -302,6 +302,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 273cfb26af8d053409bdd656dacee8f7, type: 3}
+--- !u!1 &473906971 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 888669719305614007, guid: e67272195969d9645aaa698b0c4a6891, type: 3}
+  m_PrefabInstance: {fileID: 893867975}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &581336195
 GameObject:
   m_ObjectHideFlags: 0
@@ -568,6 +573,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &706173290 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 677057132306842378, guid: e67272195969d9645aaa698b0c4a6891, type: 3}
+  m_PrefabInstance: {fileID: 893867975}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &893867975
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -700,6 +710,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67aa4a90d807f9249bd1554aa4977c55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  screenParent: {fileID: 706173290}
+  scoreParent: {fileID: 473906971}
+  loseText: {fileID: 0}
+  scoreText: {fileID: 0}
+  stars:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

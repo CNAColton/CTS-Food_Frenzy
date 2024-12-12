@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
-using UnityEngine.SceneManagment;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class NewBehaviourScript : MonoBehaviour
@@ -12,7 +12,6 @@ public class NewBehaviourScript : MonoBehaviour
     public Text scoreText; 
     public Image[] stars;
     private Animator animator;
-
     private void start()
     {
         screenParent.SetActive(false);
@@ -28,7 +27,7 @@ public class NewBehaviourScript : MonoBehaviour
     {
         screenParent.SetActive(true);
         scoreParent.SetActive(true);
-        LoseText.enabled = true;
+        loseText.enabled = true;
 
         if (animator)
         {
@@ -43,10 +42,42 @@ public class NewBehaviourScript : MonoBehaviour
         loseText.enabled = false; 
         scoreText.text = score.ToString(); 
         scoreText.enabled = false; 
+
      if (animator) 
      { 
-         animator.Play("GameOverShow"); 
+         animator.Play("GameOverDisplay"); 
     
     }
+
+        StartCoroutine(ShowWinCoroutine(starCount));
     }
+
+        private IEnumerator ShowWinCoroutine(int starCount)
+        {
+            yield return new WaitForSeconds(0.5f);
+
+            if(starCount < stars.Length)
+            {
+                for(int i = 0; i <= starCount; i++)
+                {
+                    stars[i].enabled = true;
+                    if (i > 0) {
+                        stars[i-1].enabled = false;
+                    }
+                    yield return new WaitForSeconds(0.5f);
+                }
+            }
+
+            scoreText.enabled = true;
+        }
+
+        public void OnReplayClicked ()
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
+
+        public void OnDoneClicked ()
+        {
+
+        }
 }
