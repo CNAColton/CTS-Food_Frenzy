@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using UnityEngine;
+using TMPro;
 
-public class NewBehaviourScript : MonoBehaviour
+public class GameOver : MonoBehaviour
 {
     public GameObject screenParent; 
     public GameObject scoreParent; 
-    public Text loseText; 
-    public Text scoreText; 
+    public TMP_Text loseText; 
+    public TMP_Text scoreText; 
     public Image[] stars;
     private Animator animator;
     private void start()

@@ -7,12 +7,13 @@ using TMPro;
 public class HUD : MonoBehaviour
 {
     public Level level;
+    public GameOver gameOver;
 
-    public TextMeshProUGUI remainingText;
-    public TextMeshProUGUI remainingSubtext;
-    public TextMeshProUGUI targetText;
-    public TextMeshProUGUI targetSubtext;
-    public TextMeshProUGUI scoreText;
+    public TMP_Text remainingText;
+    public TMP_Text remainingSubtext;
+    public TMP_Text targetText;
+    public TMP_Text targetSubtext;
+    public TMP_Text scoreText;
 
     public Image[] stars;
     private int starIndex;
@@ -100,12 +101,12 @@ public class HUD : MonoBehaviour
 
     public void OnGameWin(int score)
     {
-        isGameOver = true;
+        gameOver.ShowWin(score, starIndex);
     }
 
     public void OnGameLose()
     {
-        isGameOver = false;
+        gameOver.ShowLose();
     }
 }
 
