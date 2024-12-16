@@ -13,26 +13,40 @@ public class GameOver : MonoBehaviour
     public TMP_Text scoreText; 
     public Image[] stars;
     private Animator animator;
-    private void start()
+
+    void Start()
     {
-        screenParent.SetActive(false);
+        if (screenParent != null)
+        {
+            screenParent.SetActive(false);
+            Debug.Log("Game over screen deactivated successfully.");
+        }
+        else
+        {
+            Debug.LogError("screenParent is null. Assign the GameObject in the Inspector!");
+        }
+    
         for (int i = 0; i < stars.Length; i++)
         {
-            stars[i].enabled = false;
+            if (stars[i] != null)
+                stars[i].enabled = false;
         }
 
         animator = GetComponent<Animator>();
-    }
+        if (animator == null)
+            Debug.LogError("Animator component is missing on this GameObject.");
+}
+
 
     public void ShowLose()
     {
         screenParent.SetActive(true);
-        scoreParent.SetActive(true);
+        scoreParent.SetActive(false);
         loseText.enabled = true;
 
         if (animator)
         {
-            animator.Play("GameOverDisplay");
+            animator.Play("GameOverShow");
         }
     }
 
@@ -46,7 +60,7 @@ public class GameOver : MonoBehaviour
 
      if (animator) 
      { 
-         animator.Play("GameOverDisplay"); 
+         animator.Play("GameOverShow"); 
     
     }
 
@@ -79,6 +93,6 @@ public class GameOver : MonoBehaviour
 
         public void OnDoneClicked ()
         {
-
+            SceneManager.LoadScene("LevelSelect");
         }
 }

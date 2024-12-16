@@ -22,6 +22,7 @@ public class HUD : MonoBehaviour
     public void Start()
     {
         UpdateStars();
+        
     }
 
     public void UpdateStars()
@@ -109,4 +110,3 @@ public class HUD : MonoBehaviour
         gameOver.ShowLose();
     }
 }
-
