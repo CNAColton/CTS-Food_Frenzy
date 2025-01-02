@@ -549,7 +549,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 433636847}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 965437369}
+        m_TargetAssemblyTypeName: LevelSelect, Assembly-CSharp
+        m_MethodName: OnButtonPress
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: LevelOne
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &433636847
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -748,7 +760,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 620126223}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 965437369}
+        m_TargetAssemblyTypeName: LevelSelect, Assembly-CSharp
+        m_MethodName: OnButtonPress
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: LevelOne
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &620126223
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1249,6 +1273,7 @@ GameObject:
   - component: {fileID: 965437367}
   - component: {fileID: 965437366}
   - component: {fileID: 965437365}
+  - component: {fileID: 965437369}
   m_Layer: 5
   m_Name: LevelSelectCanvas
   m_TagString: Untagged
@@ -1342,6 +1367,25 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &965437369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 965437364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a811c502b35155c49a6a79ff16e71152, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttons:
+  - gameObject: {fileID: 0}
+    playerPrefKey: LevelOne
+  - gameObject: {fileID: 0}
+    playerPrefKey: LevelTwo
+  - gameObject: {fileID: 0}
+    playerPrefKey: LevelThree
 --- !u!1 &1035663897
 GameObject:
   m_ObjectHideFlags: 0
@@ -1805,7 +1849,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1561571399}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 965437369}
+        m_TargetAssemblyTypeName: LevelSelect, Assembly-CSharp
+        m_MethodName: OnButtonPress
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: LevelOne
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1561571399
 MonoBehaviour:
   m_ObjectHideFlags: 0
