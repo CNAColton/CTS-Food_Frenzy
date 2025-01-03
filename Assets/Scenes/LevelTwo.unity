@@ -615,6 +615,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1897275710206187177, guid: e67272195969d9645aaa698b0c4a6891, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -181
+      objectReference: {fileID: 0}
     - target: {fileID: 4287892492187360622, guid: e67272195969d9645aaa698b0c4a6891, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -695,9 +699,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6495905050823566985, guid: e67272195969d9645aaa698b0c4a6891, type: 3}
+      propertyPath: m_margin.x
+      value: -698.7654
+      objectReference: {fileID: 0}
+    - target: {fileID: 6796560230671285257, guid: e67272195969d9645aaa698b0c4a6891, type: 3}
+      propertyPath: level
+      value: 
+      objectReference: {fileID: 245619825}
     - target: {fileID: 7319585558988386632, guid: e67272195969d9645aaa698b0c4a6891, type: 3}
       propertyPath: m_Name
       value: Game UI Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 7735695870171197955, guid: e67272195969d9645aaa698b0c4a6891, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -563
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

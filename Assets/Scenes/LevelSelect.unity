@@ -477,7 +477,7 @@ GameObject:
   - component: {fileID: 433636847}
   - component: {fileID: 433636846}
   m_Layer: 5
-  m_Name: LevelSelectButton
+  m_Name: LevelSelectButton (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -559,7 +559,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: LevelOne
+          m_StringArgument: LevelThree
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &433636847
@@ -1380,11 +1380,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttons:
-  - gameObject: {fileID: 0}
+  - gameObject: {fileID: 620126220}
     playerPrefKey: LevelOne
-  - gameObject: {fileID: 0}
+  - gameObject: {fileID: 1561571396}
     playerPrefKey: LevelTwo
-  - gameObject: {fileID: 0}
+  - gameObject: {fileID: 433636844}
     playerPrefKey: LevelThree
 --- !u!1 &1035663897
 GameObject:
@@ -1777,7 +1777,7 @@ GameObject:
   - component: {fileID: 1561571399}
   - component: {fileID: 1561571398}
   m_Layer: 5
-  m_Name: LevelSelectButton
+  m_Name: LevelSelectButton (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1859,7 +1859,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: LevelOne
+          m_StringArgument: LevelTwo
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1561571399

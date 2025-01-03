@@ -5,6 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class LevelSelect : MonoBehaviour
 {
+    [System.Serializable]
+    public struct ButtonPlayerPrefs
+    {
+        public GameObject gameObject;
+        public string playerPrefKey;
+    }
+    public ButtonPlayerPrefs[] buttons;
+
     // Start is called before the first frame update
     private void Start()
     {
@@ -15,7 +23,9 @@ public class LevelSelect : MonoBehaviour
             for (int starIndex = 1; starIndex <= 3; starIndex++)
             {
                 Transform star = buttons[i].gameObject.transform.Find("star" + starIndex);
+
                 if (starIndex <= score)
+
                 {
                     star.gameObject.SetActive(true);
                 }
@@ -27,13 +37,7 @@ public class LevelSelect : MonoBehaviour
         }
     }
 
-    [System.Serializable]
-    public struct ButtonPlayerPrefs
-    {
-        public GameObject gameObject;
-        public string playerPrefKey;
-    }
-    public ButtonPlayerPrefs[] buttons;
+    
 
     // Update is called once per frame
     void Update()
@@ -44,5 +48,12 @@ public class LevelSelect : MonoBehaviour
     public void OnButtonPress(string LevelName)
     {
         SceneManager.LoadScene(LevelName);
+
+
+
+
+
     }
+
+    
 }
